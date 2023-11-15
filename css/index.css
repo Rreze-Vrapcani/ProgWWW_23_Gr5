@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+   
+    color: white;
+}
+#home{
+    background-image: url("../images/homeImage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    border-bottom: 2px solid white;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 0.5em 0.5em;
+    font-size: 1rem;
+    border-radius: 1rem;
+    width: 150px;
+    text-align: center;
+}
+
+.btn-arrow span {
+    display: inline-block;
+    position: relative;
+    transition: all 300ms ease-out;
+    will-change: transform;
+}
+
+.btn-arrow svg {
+    position: absolute;
+    width: 0.9em;
+    left: 110px;
+    opacity: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 300ms ease-out;
+    will-change: right, opacity;
+}
+
+
+.btn-arrow:hover span {
+    transform: translateX(-10px);
+}
+
+.btn-arrow:hover svg {
+    opacity: 1;
+    right: 10px;
+}
+
+.btn-arrow:hover svg {
+    opacity: 1;
+}
+#intro{
+    width: 550px;
+}
+#slogan{
+    font-size: calc(1.625rem + 4.5vw);
+    font-weight: 300;
+}
