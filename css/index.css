@@ -1,15 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-   
-    color: white;
+    font-family: 'Kanit', sans-serif;
 }
 #home{
     background-image: url("../images/homeImage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    height: 948px;
+    color: white;
 }
-
 
 .header {
     display: flex;
@@ -48,15 +48,13 @@ li a:hover {
 
 .btn {
     display: inline-block;
-    font-weight: 400;
     color: #ffffff;
     cursor: pointer;
-    background-color: transparent;
     border: 1px solid white;
     padding: 0.5em 0.5em;
-    font-size: 1rem;
-    border-radius: 1rem;
-    width: 150px;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    width: 15rem;
     text-align: center;
 }
 
@@ -70,7 +68,7 @@ li a:hover {
 .btn-arrow svg {
     position: absolute;
     width: 0.9em;
-    left: 110px;
+    left: 170px;
     opacity: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -92,9 +90,17 @@ li a:hover {
     opacity: 1;
 }
 #intro{
-    width: 550px;
+    width: 785px;
+    margin: 9em 0em 0em 15em;
+    font-size: 20px;
 }
 #slogan{
-    font-size: calc(1.625rem + 4.5vw);
     font-weight: 300;
+    font-size: 4em;
+    margin: unset;
+}
+#about{
+    padding-top: 10em;
+    padding-bottom: 10em;
+
 }
