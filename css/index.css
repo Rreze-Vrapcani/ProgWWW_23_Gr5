@@ -3,7 +3,8 @@ body {
     padding: 0;
     font-family: 'Kanit', sans-serif;
 }
-#home{
+
+#home {
     background-image: url("../images/homeImage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -89,18 +90,118 @@ li a:hover {
 .btn-arrow:hover svg {
     opacity: 1;
 }
-#intro{
+
+#intro {
     width: 785px;
     margin: 9em 0em 0em 15em;
     font-size: 20px;
 }
-#slogan{
+
+#slogan {
     font-weight: 300;
     font-size: 4em;
     margin: unset;
 }
-#about{
+
+#about {
     padding-top: 10em;
     padding-bottom: 10em;
 
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Set the color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Set the color of the scrollbar track */
+}
+
+footer {
+    background-color: #f8f9fa; /* Change this to match your footer background */
+    color: #212529; /* Change this to match your footer text color */
+    /* font-family: 'Arial', sans-serif; */
+    height: 450px;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1300px; /* Adjust to your site's max width */
+    margin: 0 auto;
+    padding: 50px 15px;
+}
+
+.about,
+.quick-links,
+.contact,
+.social {
+    flex: 1; /* Adjust the flex basis to control the width of each column */
+    padding: 0 10px; /* Spacing between columns */
+}
+
+.footer-container div h3  {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.footer-container div  p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #6c757d; /* Adjust to match your paragraph color */
+    margin-bottom: 0.5rem;
+}
+
+.social-icons a {
+    margin-right: 10px; 
+}
+
+.social-icons img {
+    width: 45px; /* Icon size */
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-icons a:hover img {
+    opacity: 0.7; /* Icon hover effect */
+}
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+}
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-evenly;
+}
+
+.footer-bottom p {
+    font-size: 0.875rem;
+}
+.payment-methods{
+    display: inline-flex;
+}
+
+.payment-methods img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;   
 }
