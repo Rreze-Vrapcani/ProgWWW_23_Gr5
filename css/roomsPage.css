@@ -1,0 +1,78 @@
+/* roomsPage.css */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+main {
+    margin-top: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.card img {
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    margin-bottom: 0.5rem;
+}
+
+.card button {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: gray;
+}
