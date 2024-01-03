@@ -205,3 +205,6 @@ footer {
     height: auto;
     margin-right: 10px;   
 }
+#elapsed-time{
+    color: black;
+}
