@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Kanit', sans-serif;
+    scroll-behavior: smooth;
 }
 
 #home {
@@ -58,7 +59,17 @@ li a:hover {
     width: 15rem;
     text-align: center;
 }
-
+.btn2 {
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 0.5em 0.5em;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    width: 15rem;
+    text-align: center;
+}
 .btn-arrow span {
     display: inline-block;
     position: relative;
@@ -106,37 +117,48 @@ li a:hover {
 #about {
     padding-top: 10em;
     padding-bottom: 10em;
+    background-image: url("../images/leaf.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: center;
 
 }
+#about p {
+    font-size: 1.2em; 
+    width: 60%;
+    margin-left: 20%;
+}
+#about h1 {
+    text-transform: capitalize!important;
+    font-weight: 300;
+    line-height: 1.2;
+    font-weight: 300;
+    font-size: 3em;
 
+}
 ::-webkit-scrollbar {
     width: 12px;
-    /* Set the width of the scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #888;
-    /* Set the color of the scrollbar thumb */
 }
 
 ::-webkit-scrollbar-track {
     background-color: #f1f1f1;
-    /* Set the color of the scrollbar track */
 }
 
 footer {
-    background-color: #f8f9fa; /* Change this to match your footer background */
-    color: #212529; /* Change this to match your footer text color */
-    /* font-family: 'Arial', sans-serif; */
+    background-color: #f8f9fa; 
+    color: #212529; 
     height: 450px;
-    
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1300px; /* Adjust to your site's max width */
+    max-width: 1300px; 
     margin: 0 auto;
     padding: 50px 15px;
 }
@@ -145,8 +167,8 @@ footer {
 .quick-links,
 .contact,
 .social {
-    flex: 1; /* Adjust the flex basis to control the width of each column */
-    padding: 0 10px; /* Spacing between columns */
+    flex: 1; 
+    padding: 0 10px; 
 }
 
 .footer-container div h3  {
@@ -158,7 +180,7 @@ footer {
 .footer-container div  p {
     font-size: 1.1rem;
     line-height: 1.5;
-    color: #6c757d; /* Adjust to match your paragraph color */
+    color: #6c757d; 
     margin-bottom: 0.5rem;
 }
 
@@ -173,7 +195,7 @@ footer {
 }
 
 .social-icons a:hover img {
-    opacity: 0.7; /* Icon hover effect */
+    opacity: 0.7; 
 }
 .quick-links {
     display: flex;
