@@ -32,45 +32,47 @@
                <h5><a href="index.html">Home /</a> Booking</h5>
             </div>
         </div>
-        <main>
+        <main> <br>
+
+            <h1>Rooms</h1>
 
             <div class="slideshow-container">
                 <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
                 <div class="slide">
-                    <img src="Images/classicRoom.jpg" alt="Classic Room">
+                    <img class="slideImage" src="Images/classicRoom.jpg" alt="Classic Room">
                 </div>
                 <div class="slide">
-                    <img src="Images/grandDeluxeRoom.jpg" alt="Grand Deluxe Room">
+                    <img  class="slideImage" src="Images/grandDeluxeRoom.jpg" alt="Grand Deluxe Room">
                 </div>
                 <div class="slide">
-                    <img src="Images/ultraSuperiorRoom.jpg" alt="Ultra Superior Room">
+                    <img class="slideImage" src="Images/ultraSuperiorRoom.jpg" alt="Ultra Superior Room">
                 </div>
                 <div class="slide">
-                    <img src="Images/hotelroom1.jpg" alt="Grand Deluxe Room">
+                    <img class="slideImage" src="Images/hotelroom1.jpg" alt="Grand Deluxe Room">
                 </div>
                 <div class="slide">
-                    <img src="Images/hotelroom2.jpg" alt="Ultra Superior Room">
+                    <img class="slideImage" src="Images/hotelroom2.jpg" alt="Ultra Superior Room">
                 </div>
                 <div class="slide">
-                    <img src="Images/hotelroom3.jpg" alt="Classic Room">
+                    <img class="slideImage" src="Images/hotelroom3.jpg" alt="Classic Room">
                 </div>
                 <div class="slide">
-                    <img src="Images/hotelroom4.jpg" alt="Grand Deluxe Room">
+                    <img class="slideImage" src="Images/hotelroom4.jpg" alt="Grand Deluxe Room">
                 </div>
                 <div class="slide">
-                    <img src="Images/hotelroom5.jpg" alt="Ultra Superior Room">
+                    <img class="slideImage" src="Images/hotelroom5.jpg" alt="Ultra Superior Room">
                 </div>
                 <div class="slide">
-                    <img src="Images/hotelroom6.jpg" alt="Ultra Superior Room">
+                    <img class="slideImage" src="Images/hotelroom6.jpg" alt="Ultra Superior Room">
                 </div>
                 <div class="slide">
-                    <img src="Images/hotelroom7.jpg" alt="Ultra Superior Room">
+                    <img class="slideImage" src="Images/hotelroom7.jpg" alt="Ultra Superior Room">
                 </div>
                 <div class="slide">
-                    <img src="Images/hotelroom8.jpg" alt="Ultra Superior Room">
+                    <img class="slideImage" src="Images/hotelroom8.jpg" alt="Ultra Superior Room">
                 </div>
                 <div class="slide">
-                    <img src="Images/hotelroom9.jpg" alt="Ultra Superior Room">
+                    <img class="slideImage" src="Images/hotelroom9.jpg" alt="Ultra Superior Room">
                 </div>
         
                 
@@ -78,31 +80,34 @@
             </div>
             
 <div id="myModal" class="modal">
+
     <div class="modal-content">
         <h2>Booking Details</h2>
-
         <label for="roomType">Room Type:</label>
         <select id="roomType">
             <option value="classic">Classic Room</option>
             <option value="grandDeluxe">Grand Deluxe Room</option>
             <option value="ultraSuperior">Ultra Superior Room</option>
-        </select>
+        </select> <br>
 
         <label for="startDate">Start Date:</label>
-        <input type="date" id="startDate" required>
+        <input type="date" id="startDate" required> <br>
 
         <label for="endDate">End Date:</label>
-        <input type="date" id="endDate" required>
+        <input type="date" id="endDate" required> <br>
 
         <label for="adults">Adults:</label>
-        <input type="number" id="adults" min="1" required>
+        <input type="number" id="adults" min="1" required> <br>
 
         <label for="children">Children:</label>
-        <input type="number" id="children" min="0" required>
+        <input type="number" id="children" min="0" required> <br>
 
         <button onclick="calculateTotal()">Book Now</button>
         <p id="totalPrice">Total Price: $0</p>
     </div>
+
+
+    
 </div>
 
 

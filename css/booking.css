@@ -10,7 +10,7 @@ body {
     margin: auto;
     overflow: hidden;
     white-space: nowrap;
-    
+    margin-bottom: 5%;
 }
 
 .slide {
@@ -20,16 +20,20 @@ body {
     text-align: center;
 }
 
-img {
+.slideImage {
     width: 400px;
     height: 300px;
-    border: 2px solid #fff; /* Add a border for better visibility */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for better aesthetics */
+    border: 2px solid #fff; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s;
 }
 
+.slideImage:hover{
+    filter: brightness(90%)
+}
+
 .slide:hover img {
-    transform: scale(1.05); /* Increase size on hover for a zoom effect */
+    transform: scale(1.05); 
 }
 
 .prev,
@@ -57,4 +61,12 @@ img {
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 2%;
 }

@@ -74,3 +74,21 @@ function showSlides(n) {
     slides[currentSlide + 1].style.display = "inline-block";
     slides[currentSlide + 2].style.display = "inline-block";
 }
+
+var slides = document.querySelectorAll('.slide');
+
+            slides.forEach(function (slide) {
+                slide.addEventListener('mouseover', function () {
+                    var figcaption = this.querySelector('figcaption');
+                    if (figcaption) {
+                        figcaption.style.visibility = 'visible';
+                    }
+                });
+
+                slide.addEventListener('mouseout', function () {
+                    var figcaption = this.querySelector('figcaption');
+                    if (figcaption) {
+                        figcaption.style.visibility = 'hidden';
+                    }
+                });
+            });
