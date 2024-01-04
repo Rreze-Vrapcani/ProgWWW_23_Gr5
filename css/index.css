@@ -73,6 +73,20 @@ li a:hover {
     text-align: center;
 }
 
+.btn3 {
+    margin-top: 7px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 0.5em 0.5em;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    width: 15rem;
+    text-align: center;
+}
+
 .btn-arrow span {
     display: inline-block;
     position: relative;
@@ -127,13 +141,15 @@ li a:hover {
 
 }
 
-#about p {
+#about p,
+#newspaper p {
     font-size: 1.2em;
     width: 60%;
     margin-left: 20%;
 }
 
-#about h1 {
+#about h1,
+#newspaper h2 {
     text-transform: capitalize !important;
     font-weight: 300;
     line-height: 1.2;
@@ -285,4 +301,47 @@ footer {
 .activity {
     flex: 1 0 calc(33.33% - 20px);
     margin-bottom: 20px;
+}
+
+#newspaper {
+    padding-top: 7em;
+    padding-bottom: 7em;
+    text-align: center;
+}
+
+.email-input {
+    border-radius: 30px;
+    height: 2.8em;
+    display: inline-block;
+    width: 36em;
+    font-size: 1.2em;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* check this again */
+#quotes {
+    overflow: hidden;
+}
+
+.quote {
+    display: none;
+    animation: fade 1.5s ease-in-out infinite;
+}
+
+.quote.show {
+    display: block;
+}
+
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    20%,
+    80% {
+        opacity: 1;
+    }
 }
