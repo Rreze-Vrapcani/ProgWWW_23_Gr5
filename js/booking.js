@@ -45,3 +45,32 @@ function calculateTotal() {
     document.getElementById("totalPrice").innerText = "Total Price: $" + totalPrice.toFixed(2);
 }
 
+
+var currentSlide = 1;
+showSlides(currentSlide);
+
+function changeSlide(n) {
+    showSlides(currentSlide += n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slide");
+
+    if (n > slides.length - 3) {
+        currentSlide = 1;
+    }
+
+    if (n < 1) {
+        currentSlide = slides.length - 2;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[currentSlide - 1].style.display = "inline-block";
+    slides[currentSlide].style.display = "inline-block";
+    slides[currentSlide + 1].style.display = "inline-block";
+    slides[currentSlide + 2].style.display = "inline-block";
+}
