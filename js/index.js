@@ -95,3 +95,17 @@ function showNextQuote() {
 
 showNextQuote();
 setInterval(showNextQuote, 5000);
+
+//get in touch
+function submit() {
+    var text = document.getElementsByClassName("message")[0].value;
+    var name = document.getElementsByClassName("name")[0].value;
+    var email = document.getElementsByClassName("email")[0].value;
+
+    if (text.trim() !== "" && name.trim() !== "" && email.trim() !== "") {
+        alert("Thanks for reaching out to us!");
+        document.getElementsByClassName("message")[0].value = "";
+        document.getElementsByClassName("name")[0].value = "";
+        document.getElementsByClassName("email")[0].value = "";
+    }
+}

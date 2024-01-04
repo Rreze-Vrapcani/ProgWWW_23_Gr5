@@ -5,6 +5,10 @@ body {
     scroll-behavior: smooth;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 #home {
     background-image: url("../images/homeImage.jpg");
     background-size: cover;
@@ -285,7 +289,8 @@ footer {
     cursor: pointer;
 }
 
-.display-5 {
+.display-5,
+.col2 h2 {
     text-transform: capitalize !important;
     font-weight: 300;
     line-height: 1.2;
@@ -344,4 +349,56 @@ footer {
     80% {
         opacity: 1;
     }
+}
+
+/* this up */
+
+
+#engage {
+    background-color: #F9F7F5;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.col2 p {
+    font-size: 1.2em;
+}
+
+.col2 span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.col2 span p {
+    margin: 0;
+}
+
+.message {
+    border: none;
+    outline: none;
+    background-color: #F9F7F5;
+    border-bottom: 1px solid grey;
+    transition: background-color 0.3s ease;
+    width: 50%;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.name,
+.email {
+    border: none;
+    outline: none;
+    background-color: #F9F7F5;
+    border-bottom: 1px solid grey;
+    width: 50%;
+    font-size: 1.2em;
+    margin-bottom: 15px;
 }
