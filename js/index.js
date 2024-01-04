@@ -1,3 +1,4 @@
+//audios
 let a = 0;
 document.getElementById("spa").addEventListener("click", function () {
     if (a == 0) {
@@ -49,3 +50,48 @@ document.getElementById("fish").addEventListener("click", function () {
         document.getElementById("fish").style.opacity = "1";
     }
 });
+
+//newspaper
+// document.addEventListener("DOMContentLoaded", function () {
+//     var storedEmail = localStorage.getItem("userEmail");
+//     if (storedEmail) {
+//       document.getElementById("emailInput").value = storedEmail;
+//       document.getElementById("emailInput").style.backgroundColor = "lightblue";
+//     }
+//   });
+
+//   function subscribe() {
+//     var emailInput = document.getElementById("emailInput");
+//     var userEmail = emailInput.value;
+
+//     if (userEmail.trim() !== "") {
+//       localStorage.setItem("userEmail", userEmail);
+
+//       emailInput.style.backgroundColor = "lightblue";
+
+//     }
+//   }
+
+function subscribe() {
+    var emailInput = document.getElementById("emailInput");
+    var userEmail = emailInput.value;
+
+    if (userEmail.trim() !== "") {
+        alert("You've successfully subscribed!");
+        emailInput.value = "";
+    }
+}
+
+//quotes
+const quotes = document.querySelectorAll('.quote');
+
+let index = 0;
+
+function showNextQuote() {
+    quotes[index].classList.remove('show');
+    index = (index + 1) % quotes.length;
+    quotes[index].classList.add('show');
+}
+
+showNextQuote();
+setInterval(showNextQuote, 5000);
