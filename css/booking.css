@@ -70,3 +70,33 @@ body {
     width: 50%;
     margin-left: 2%;
 }
+
+.info{
+    border: none;
+    outline: none;
+    background-color: #F9F7F5;
+    border-bottom: 1px solid grey;
+    width: 90%;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+#myModal{
+   display: flex;
+   flex-direction: row;
+}
+
+.costumer-info{
+width: 50%;
+}
+
+.roomsHeader {
+    background-image: url("../images/bookingHeader.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 378px;
+    width: 100%;
+    color: white;
+    object-fit: cover;
+}
