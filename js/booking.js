@@ -1,3 +1,5 @@
+// Function to calculate the total
+
 var modal = document.getElementById("myModal");
 
 function calculateTotal() {
@@ -46,6 +48,8 @@ function calculateTotal() {
 }
 
 
+// Function to make the slideshow
+
 var currentSlide = 1;
 showSlides(currentSlide);
 
@@ -92,3 +96,15 @@ var slides = document.querySelectorAll('.slide');
                     }
                 });
             });
+
+
+
+// Function to confirm booking
+
+function confirmBooking() {
+    // Get the Full Name input value
+    var fullName = document.getElementById("fullNameInput").value;
+
+    // Display the success message with the Full Name
+    alert("Your reservation was made successfully. Thank you, " + fullName + " for choosing us!");
+}
