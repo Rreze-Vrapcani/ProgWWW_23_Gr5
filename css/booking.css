@@ -89,6 +89,8 @@ body {
 
 .costumer-info{
 width: 50%;
+padding-right: 5%;
+padding-left: 5%;
 }
 
 .roomsHeader {
@@ -99,4 +101,15 @@ width: 50%;
     width: 100%;
     color: white;
     object-fit: cover;
+}
+
+.paymentDetails{
+    color: gray;
+    font-size: 13px;
+    position: relative;
+    left: 23px;
+}
+
+.buttonTotal{
+    width: 90%;
 }
