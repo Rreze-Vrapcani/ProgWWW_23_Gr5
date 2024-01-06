@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Kanit', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .bold {
@@ -78,7 +79,7 @@ li a:hover {
 }
 
 .btn3 {
-    margin-top: 7px;
+    margin: 7px 0;
     display: inline-block;
     background-color: black;
     color: white;
@@ -216,7 +217,6 @@ footer {
 
 .social-icons img {
     width: 45px;
-    /* Icon size */
     height: auto;
     transition: opacity 0.3s ease-in-out;
 }
@@ -291,10 +291,8 @@ footer {
 
 .display-5,
 .col2 h2 {
-    text-transform: capitalize !important;
     font-weight: 300;
     line-height: 1.2;
-    font-weight: 300;
     font-size: 3em;
 }
 
@@ -324,81 +322,77 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-/* check this again */
-#quotes {
-    overflow: hidden;
+.slideshow-container {
+    position: relative;
+    background: #F9F7F5;
+    padding: 7em 0;
+}
+.mySlides {
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+}
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 100%;
 }
 
-.quote {
-    display: none;
-    animation: fade 1.5s ease-in-out infinite;
+.next {
+    position: absolute;
+    right: 0;
 }
 
-.quote.show {
-    display: block;
+.prev:hover,
+.next:hover {
+    background-color: gray;
+    color: white;
 }
 
-@keyframes fade {
-
-    0%,
-    100% {
-        opacity: 0;
-    }
-
-    20%,
-    80% {
-        opacity: 1;
-    }
+q {
+    font-style: italic;
+    font-size: 2em;
 }
-
-/* this up */
-
 
 #engage {
     background-color: #F9F7F5;
-}
-
-.row2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-
-}
-
-.col2 p {
     font-size: 1.2em;
 }
 
-.col2 span {
+.col2 .contactInfo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 50px;
 }
 
-.col2 span p {
+.col2 span p,
+.col2 h2 {
     margin: 0;
+
 }
 
+.name,
+.email,
 .message {
     border: none;
     outline: none;
     background-color: #F9F7F5;
     border-bottom: 1px solid grey;
-    transition: background-color 0.3s ease;
-    width: 50%;
+    width: 100%;
     font-size: 1.2em;
     margin-bottom: 15px;
+    font-family: 'Kanit', sans-serif;
 }
 
-.name,
-.email {
-    border: none;
-    outline: none;
-    background-color: #F9F7F5;
-    border-bottom: 1px solid grey;
-    width: 50%;
-    font-size: 1.2em;
-    margin-bottom: 15px;
+.sect {
+    margin: 0 6em;
 }

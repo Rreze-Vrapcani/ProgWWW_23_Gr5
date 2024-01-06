@@ -51,27 +51,7 @@ document.getElementById("fish").addEventListener("click", function () {
     }
 });
 
-//newspaper
-// document.addEventListener("DOMContentLoaded", function () {
-//     var storedEmail = localStorage.getItem("userEmail");
-//     if (storedEmail) {
-//       document.getElementById("emailInput").value = storedEmail;
-//       document.getElementById("emailInput").style.backgroundColor = "lightblue";
-//     }
-//   });
-
-//   function subscribe() {
-//     var emailInput = document.getElementById("emailInput");
-//     var userEmail = emailInput.value;
-
-//     if (userEmail.trim() !== "") {
-//       localStorage.setItem("userEmail", userEmail);
-
-//       emailInput.style.backgroundColor = "lightblue";
-
-//     }
-//   }
-
+//newsletter
 function subscribe() {
     var emailInput = document.getElementById("emailInput");
     var userEmail = emailInput.value;
@@ -83,18 +63,32 @@ function subscribe() {
 }
 
 //quotes
-const quotes = document.querySelectorAll('.quote');
+var slideIndex = 1;
+showSlides(slideIndex);
 
-let index = 0;
-
-function showNextQuote() {
-    quotes[index].classList.remove('show');
-    index = (index + 1) % quotes.length;
-    quotes[index].classList.add('show');
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-showNextQuote();
-setInterval(showNextQuote, 5000);
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
 
 //get in touch
 function submit() {
@@ -109,3 +103,13 @@ function submit() {
         document.getElementsByClassName("email")[0].value = "";
     }
 }
+
+//video
+function startVideo() {
+    var video = document.getElementById("myVideo");
+    var playButton = document.querySelector(".play-button");
+    video.play();
+    playButton.style.display = "none";
+}
+
+

@@ -51,6 +51,7 @@
       </a>
     </section>
   </div>
+
   <div id="about">
     <h1>Welcome To Hotel Serene</h1>
     <p>
@@ -73,8 +74,8 @@
       </span>
     </a>
   </div>
-  <section id="activities" class="overflow-hidden">
 
+  <section id="activities" class="overflow-hidden">
     <div class="row">
       <img src="images/single-image.jpg" alt="hotel" class="img-fluid">
       <div class="col2">
@@ -168,26 +169,46 @@
       </div>
     </div>
   </section>
-  <section id="quotes">
-    <div class="quote show">
-      <p>"A reader will be distracted by the readable content of a page when looking at its layout. The point of using
-        Lorem
-        Ipsum is that it has a more-or-less normal distribution of letters. "</p>
-      <h6>-RREZE VRAPCANI, FRANCE</h6>
-    </div>
-    <div class="quote">
-      <p>""Success is not just about achieving goals; it's about embracing the journey, learning from failures, and
-        finding passion in the process.
-        In the tapestry of life, every challenge and triumph weaves a unique story. "</p>
-      <h6>-RUBINA BERISHA, ITALY</h6>
-    </div>
-    <div class="quote">
-      <p>"Celebrate the magic within the mundane, for in the everyday moments lies the extraordinary.
-        Life is a grand tapestry woven with threads of joy, challenges, and profound connections."</p>
-      <h6>-ERE DEDINCA, INDIA</h6>
-    </div>
 
+  <section id="quotes">
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <q>Success is not just about achieving goals; it's about embracing the journey, learning from failures, and
+          finding passion in the process.
+          In the tapestry of life, every challenge and triumph weaves a unique story. </q>
+        <p class="author">- Rreze Vrapcani, FRANCE</p>
+      </div>
+
+      <div class="mySlides">
+        <q>Celebrate the magic within the mundane, for in the everyday moments lies the extraordinary.
+          Life is a grand tapestry woven with threads of joy, challenges, and profound connections.</q>
+        <p class="author">- Rubina Berisha, ITALY</p>
+      </div>
+
+      <div class="mySlides">
+        <q>A reader will be distracted by the readable content of a page when looking at its layout. The point of using
+          Lorem
+          Ipsum is that it has a more-or-less normal distribution of letters.</q>
+        <p class="author">- Ere Dedinca, INDIA</p>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
   </section>
+  
+  <section id="video">
+    <div class="video-container">
+      <video id="myVideo" controls>
+        <source src="video/hotelVideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="play-button" onclick="startVideo()">
+        <i class="fa-solid fa-play"></i>
+      </div>
+    </div>
+  </section>
+
   <section id="news">
     <h2>Latest News</h2>
     <p>Browse the latest articles from out blogs.</p>
@@ -227,17 +248,18 @@
       </div>
     </div>
   </section>
+
   <section id="achievements">
     <h2>Our Achievements</h2>
     <p>We are the top leading hotel with 22 years of experiences.</p>
   </section>
   <section id="engage">
-    <div class="row2">
-      <div class="col2" style="text-align: justify;">
+    <div class="row">
+      <div class="col2 sect" style="text-align: justify;">
         <h2>Get In Touch</h2>
         <p>Ante sed dictum nisi suscipit ac ut faucibus pretium. Ultrices interdum viverra pharetra, tellus. Sapien eu
           diam ipsum volutpat, amet fringilla.</p>
-        <span>
+        <span class="contactInfo">
           <p><b>Address:</b> Lina Begu, Lagja e Spitalit, Prishtine</p>
           <p><b>Phone:</b> +383 45 823 292</p>
           <p><b>Email:</b> info@serenehotel.com</p>
@@ -246,28 +268,29 @@
           <textarea class="message" placeholder="Write your message" rows="1"></textarea> <br>
           <input class="name" placeholder="Write your full name" type="text"> <br>
           <input class="email" placeholder="Write your email address" type="email" /> <br>
-          <a href="#" class="btn3 btn-arrow" onclick="submit()">
+          <a href="#" class="btn3 btn-arrow" onclick="submit()" style="margin: 10px 0;">
             <span>Submit
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8"
-                enable-background="new 0 0 36.1 25.8" xml:space="preserve" style="left: 120px;">
+                enable-background="new 0 0 36.1 25.8" xml:space="preserve" style="left: 95px;">
                 <g>
-                  <line fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9"
-                    x2="34" y2="12.9"></line>
+                  <line fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34"
+                    y2="12.9"></line>
                   <polyline fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10"
-                    points="22.2,1.1 34,12.9 22.2,24.7 "></polyline>
+                    points="22.2,1.1 34,12.9 22.2,24.7   "></polyline>
                 </g>
               </svg>
             </span>
           </a>
         </form>
+
       </div>
       <img src="images/getintouchimage.jpg" alt="Get in touch">
     </div>
   </section>
-  
+
   <section id="newspaper">
-    <h2>Join Our Newspaper</h2>
+    <h2>Join Our Newsletter</h2>
     <p>Sign up to our newsletter to receive our latest news about offers & promotions.</p>
     <div class="email-container">
       <input type="email" name="email" class="email-input" id="emailInput" placeholder="Enter your email address">
