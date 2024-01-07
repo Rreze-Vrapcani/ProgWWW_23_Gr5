@@ -107,9 +107,11 @@ function submit() {
 //video
 function startVideo() {
     var video = document.getElementById("myVideo");
-    var playButton = document.querySelector(".play-button");
-    video.play();
-    playButton.style.display = "none";
+    video.controls = true; 
+    video.play(); 
+    document.querySelector(".play-button").style.display = 'none'; 
 }
+
+document.querySelector(".play-button").addEventListener('click', startVideo);
 
 

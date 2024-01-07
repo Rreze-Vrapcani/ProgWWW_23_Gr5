@@ -266,7 +266,6 @@ footer {
     color: black;
 }
 
-
 #activities {
     background-color: #F9F7F5;
 }
@@ -314,7 +313,7 @@ footer {
     padding-top: 7em;
     padding-bottom: 7em;
     text-align: center;
-    background-image: linear-gradient(to left,#F9F7F5, #ffffff);
+    background-image: linear-gradient(to left, #F9F7F5, #ffffff);
 }
 
 .email-input {
@@ -434,13 +433,13 @@ q {
 /* this up */
 
 #achievements {
-    max-width: 1200px;
-    margin: 0 auto;
     font-size: 1.2em;
 }
 
 .ach {
     padding: 6em 0;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .scndRow {
@@ -455,6 +454,7 @@ q {
 }
 
 .achievement span {
+    font-family: "Old Standard TT", serif;
     font-size: 5em;
     line-height: 1;
     transition: box-shadow 0.3s ease-in-out;
@@ -468,4 +468,27 @@ q {
 .achievement p {
     font-size: 1em;
     margin-top: 10px;
+}
+
+#video {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.play-button i {
+    color: white;
+    font-size: 7em;
 }
