@@ -1,0 +1,25 @@
+.servicesHeader {
+    background-image: url("../images/servicesHeader.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 378px;
+    width: 100%;
+    color: white;
+    object-fit: cover;
+}
+
+.servicesInfo{
+    color: gray;
+    font-size: 13px;
+    line-height: 20px;
+    
+}
+
+.box{
+    padding: 30px;
+    margin: 20px;
+}
+
+#activities{
+    background-color: white;
+}

@@ -45,7 +45,7 @@ body {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 50%;
     width: auto;
     padding: 16px;
     color: #fff;
@@ -145,7 +145,7 @@ padding-left: 5%;
    .prev,
    .next {
     position: absolute;
-    top: 20px;
+    top: 160px;
     width: auto;
     width: 5px;   
 }
