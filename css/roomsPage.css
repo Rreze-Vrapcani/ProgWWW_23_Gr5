@@ -177,11 +177,16 @@ main {
     }
 
     .email-input{
-        width: 100%;
+        width: 90%;
     }
 
     .footer-container{
         display: flex;
         flex-direction: column;
     }
+
+    .getInTouch {
+        text-align: center; 
+        margin: 5px;
+      }
 }
