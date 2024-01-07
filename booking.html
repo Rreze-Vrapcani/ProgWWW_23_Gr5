@@ -22,7 +22,7 @@
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT US</a></li>
                     <li><a href="#activities">ACTIVITIES</a></li>
-                    <li><a href="#rooms">ROOMS</a></li>
+                    <li><a href="roomsPage.html">ROOMS</a></li>
                     <li><a href="#booking">BOOKING</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
@@ -114,14 +114,17 @@
 
             <textarea class="info" placeholder="Write your message" rows="4"></textarea>  <br>
 
-            <button class="total buttonTotal" onclick="calculateTotal()">Check Total</button>
-            <p  class="total" id="totalPrice">Total Price: $0</p>
+            
        
     </div>
 
     <div class="costumer-info">
         
-        <form action="#" method="POST">
+        <form action="#" method="POST" onsubmit="calculateTotal(event)">
+
+            <h2>Total Bill</h2>
+            <button class="total buttonTotal" onclick="calculateTotal()">Check Total</button>
+            <p  class="total" id="totalPrice">Total Price: $0</p> <br>
 
             <h2>Payment Option</h2> <br>
 
@@ -183,7 +186,7 @@
   </div>
 
   <div class="image">
-    <img src="images/getintouchimage.jpg" alt="Breakfast Table" height="600px" width="700px">
+    <img class="infoImg" src="images/getintouchimage.jpg" alt="Breakfast Table">
   </div>
 </div>
 

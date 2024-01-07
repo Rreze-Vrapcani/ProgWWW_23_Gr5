@@ -4,6 +4,11 @@ body {
     margin: 0;
 }
 
+.infoImg{
+    width: 100%;
+    height: 100%;
+}
+
 .slideshow-container {
     max-width: 1500px;
     position: relative;
@@ -76,7 +81,7 @@ body {
     outline: none;
     background-color: #F9F7F5;
     border-bottom: 1px solid grey;
-    width: 90%;
+    width: 100%;
     font-size: 1.2em;
     margin-bottom: 15px;
     padding: 5px;
@@ -113,3 +118,68 @@ padding-left: 5%;
 .buttonTotal{
     width: 90%;
 }
+
+
+@media only screen and (max-width: 768px) {
+
+    .info {
+        flex-direction: column;
+    }
+
+    .getInTouch,
+    .image {
+        width: 100%;
+    }
+
+    .roomsHeader{
+        width: 100%;
+        height: 50%;
+    }
+
+   .slideImage{
+    width: 100%;
+    height: 100px;
+    max-height: 200px;
+   }
+
+   .prev,
+   .next {
+    position: absolute;
+    top: 20px;
+    width: auto;
+    width: 5px;   
+}
+
+#myModal{
+    display: flex;
+    flex-direction: column;
+}
+
+.costumer-info{
+    width: 90%;
+    }
+
+    .modal-content{
+        width: 100%;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+
+    .infoImg{
+        width: 100%;
+        height: 50%;
+    }
+
+    .email-input{
+        width: 100%;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+    }
+

@@ -2,7 +2,10 @@
 
 var modal = document.getElementById("myModal");
 
-function calculateTotal() {
+function calculateTotal(event) {
+
+    event.preventDefault();
+
     var roomType = document.getElementById("roomType").value;
     var startDate = new Date(document.getElementById("startDate").value);
     var endDate = new Date(document.getElementById("endDate").value);
@@ -46,6 +49,8 @@ function calculateTotal() {
 
     document.getElementById("totalPrice").innerText = "Total Price: $" + totalPrice.toFixed(2);
 }
+var bookingForm = document.querySelector('form[action="#"]');
+bookingForm.addEventListener('submit', calculateTotal);
 
 
 // Function to make the slideshow
@@ -102,9 +107,6 @@ var slides = document.querySelectorAll('.slide');
 // Function to confirm booking
 
 function confirmBooking() {
-    // Get the Full Name input value
     var fullName = document.getElementById("fullNameInput").value;
-
-    // Display the success message with the Full Name
     alert("Your reservation was made successfully. Thank you, " + fullName + " for choosing us!");
 }
