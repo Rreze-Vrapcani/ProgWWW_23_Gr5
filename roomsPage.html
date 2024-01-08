@@ -20,14 +20,14 @@
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="#about">ABOUT US</a></li>
-                    <li><a href="#activities">ACTIVITIES</a></li>
+                    <li><a href="services.html">ACTIVITIES</a></li>
                     <li><a href="#rooms">ROOMS</a></li>
                     <li><a href="booking.html">BOOKING</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
              <div class="headerContent">
-               <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 90px;">Rooms</h1>
+               <h1 style="font-weight: 400; font-size: 6rem;">Rooms</h1>
                <h5><a href="index.html">Home /</a> Rooms</h5>
             </div>
         </div>
@@ -296,6 +296,15 @@
             document.getElementsByClassName("email")[0].value = "";
         }
     }
+    function subscribe() {
+    var emailInput = document.getElementById("emailInput");
+    var userEmail = emailInput.value;
+
+    if (userEmail.trim() !== "") {
+        alert("You've successfully subscribed!");
+        emailInput.value = "";
+    }
+}
 </script>
 </body>
 

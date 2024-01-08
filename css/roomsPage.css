@@ -13,7 +13,7 @@ body {
     background-image: url("../images/roomsHeader.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 378px;
+    height: 470px;
     width: 100%;
     color: white;
     object-fit: cover;
@@ -97,7 +97,7 @@ main {
 .headerContent {
     line-height: 10px;
     position: relative;
-    left: 10%;
+    left: 14%;
     top: 20%;
 }
 

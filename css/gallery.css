@@ -1,21 +1,206 @@
-/* Style for filtered elements - hidden by default */
+body {
+  font-family: 'Kanit', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.galleryHeader {
+  background-image: url("../images/gallery.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 470px;
+  width: 100%;
+  color: white;
+  object-fit: cover;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+
+main {
+  margin-top: 2rem;
+}
+
+.headerContent {
+  line-height: 10px;
+  position: relative;
+  left: 14%;
+  top: 20%;
+}
+
+.galleryContainer {
+  padding: 0 5em 5em 5em;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .gallery img {
+    width: calc(50% - 10px);
+  }
+}
+
+
+.gallery img {
+  width: calc(28% - 10px);
+  height: auto;
+}
+
 .filterDiv {
-    display: none;
+  display: none;
+  transition: transform 0.5s;
+}
+
+.filterDiv:hover {
+  /* transform: scale(1.1); */
+  animation: pulse 5s infinite;
+
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-  
-  /* Look of elements when they are shown */
-  .show {
-    display: block;
+
+  50% {
+    transform: scale(1.1);
+    /* Slightly increase the size */
   }
-  
-  /* Style for the buttons */
-  .filter-btn {
-    cursor: pointer;
-    /* Add more styles as needed */
+
+  100% {
+    transform: scale(1);
   }
-  
-  /* Style for active button */
-  .active {
-    /* your active class style */
-  }
-  
+}
+
+.show {
+  display: block;
+}
+
+#galleryFilters {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filter-btn {
+  cursor: pointer;
+  border: 1px dotted black;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: white;
+  background-color: black;
+  margin: 5px;
+}
+
+.filter-btn:active {
+  background-color: white;
+  color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#pagination button {
+  padding: 5px 15px;
+  margin: 10px 5px;
+  cursor: pointer;
+  border: 1px dotted black;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: black;
+  background-color: white;
+  width: 150px;
+}
+
+#pagination button:hover {
+  background-color: black;
+  color: white;
+}
+
+#pageNumber {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 150px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#DandD {
+  background-image: url("../images/leaf5.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+  /* Use flexbox to layout children horizontally */
+  align-items: center;
+  /* Align items vertically in the center */
+  justify-content: center;
+  /* Center items horizontally */
+  gap: 20px;
+  /* Adds some space between the div and image */
+  padding: 4em;
+  background-color: #F9F7F5;
+  /* Light grey background */
+}
+
+#div1 {
+  width: 350px;
+  height: 200px;
+  padding: 10px;
+  border: 2px dashed #aaaaaa;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#drag1 {
+  width: 200px;
+  cursor: move;
+}

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
     background-color: #f1f1f1;
     margin: 0;
 }
@@ -102,7 +102,7 @@ padding-left: 5%;
     background-image: url("../images/bookingHeader.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 378px;
+    height: 470px;
     width: 100%;
     color: white;
     object-fit: cover;

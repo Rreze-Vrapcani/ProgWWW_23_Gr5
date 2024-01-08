@@ -44,7 +44,7 @@
       <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT US</a></li>
-        <li><a href="#activities">ACTIVITIES</a></li>
+        <li><a href="services.html">ACTIVITIES</a></li>
         <li><a href="roomsPage.html">ROOMS</a></li>
         <li><a href="booking.html">BOOKING</a></li>
         <li><a href="contact.html">CONTACT</a></li>
@@ -262,7 +262,7 @@
     <section id="news">
       <div class="desc">
         <h2>Latest News</h2>
-        <p>Browse the latest articles from out blogs.</p>
+        <p id="hide">Browse the latest articles from out blogs.</p>
       </div>
       <div class="newsArticles">
         <div class="articles">
@@ -441,7 +441,8 @@
     integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
-
+    //jquery
+    
     $('.gallery').slick({
       dots: false,
       infinite: true,
@@ -475,6 +476,11 @@
       ]
     });
 
+    $(document).ready(function () {
+      $("#hide").dblclick(function () {
+        $(this).hide();
+      });
+    });
   </script>
 </body>
 
