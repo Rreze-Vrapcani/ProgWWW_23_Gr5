@@ -406,31 +406,26 @@ q {
     margin: 0 6em;
 }
 
-/* check this again */
-#news {
-    padding: 7em 0;
-}
-
 .newsArticles {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .articles {
-    width: 20%;
+    width: 30%;
     margin-bottom: 20px;
     display: flex;
+    flex-direction: column;
 }
-
 
 .date {
-    font-size: 1.5em;
+    font-size: 1em;
     margin-right: 10px;
-}
+    font-family: "Old Standard TT", serif;
 
-/* this up */
+}
 
 #achievements {
     font-size: 1.2em;
@@ -491,4 +486,21 @@ q {
 .play-button i {
     color: white;
     font-size: 7em;
+}
+
+#gallery {
+    padding: 0 6em 6em;
+
+}
+
+#news {
+    padding: 6em 0 0 0;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+#newsArticle {
+    background-image: url("../images/leaf3.png");
+    background-position: right;
+    background-repeat: no-repeat;
 }
