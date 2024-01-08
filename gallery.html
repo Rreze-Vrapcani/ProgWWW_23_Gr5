@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/gallery.css">
     <title>Gallery</title>
 </head>
+
 <body>
-    
+    <div class="galleryTitle">
+        <h1>Gallery</h1>
+        <h5><a href="index.html">Home /</a> Gallery</h5>
+    </div>
+    <div class="galleryContainer">
+        <h1>Gallery</h1>
+        <!-- Filter Buttons -->
+        <div id="galleryFilters">
+            <button class="filter-btn" onclick="filterSelection('all')"> All</button>
+            <button class="filter-btn" onclick="filterSelection('rooms')">Rooms</button>
+            <button class="filter-btn" onclick="filterSelection('restaurant')"> Restaurant</button>
+            <button class="filter-btn" onclick="filterSelection('pool')">Pool</button>
+        </div>
+
+        <!-- Gallery -->
+        <div class="gallery">
+            <img class="filterDiv rooms" src="images/grandDeluxeRoom.jpg" alt="rooms">
+            <img class="filterDiv rooms" src="images/classicRoom.jpg" alt="rooms">
+            <img class="filterDiv rooms" src="images/hotelroom1.jpg" alt="rooms">
+            <img class="filterDiv rooms" src="images/hotelroom2.jpg" alt="rooms">
+            <img class="filterDiv rooms" src="images/hotelroom3.jpg" alt="rooms">
+            <img class="filterDiv rooms" src="images/hotelroom4.jpg" alt="rooms">
+            <img class="filterDiv rooms" src="images/hotelroom5.jpg" alt="rooms">
+            <img class="filterDiv rooms" src="images/hotelroom6.jpg" alt="rooms">
+            <img class="filterDiv rooms" src="images/hotelroom7.jpg" alt="rooms">
+            <img class="filterDiv rooms" src="images/hotelroom8.jpg" alt="rooms">
+            <img class="filterDiv rooms" src="images/hotelroom9.jpg" alt="rooms">
+
+            <img class="filterDiv restaurant" src="images/" alt="restaurant">
+            <img class="filterDiv restaurant" src="images/" alt="restaurant">
+            <img class="filterDiv restaurant" src="images/" alt="restaurant">
+            <img class="filterDiv restaurant" src="images/" alt="restaurant">
+            <img class="filterDiv restaurant" src="images/" alt="restaurant">
+            <img class="filterDiv restaurant" src="path/to/image1.jpg" alt="restaurant">
+            <img class="filterDiv restaurant" src="path/to/image1.jpg" alt="restaurant">
+            <img class="filterDiv restaurant" src="path/to/image1.jpg" alt="restaurant">
+
+            <img class="filterDiv pool" src="path/to/image1.jpg" alt="pool">
+            <img class="filterDiv pool" src="path/to/image1.jpg" alt="pool">
+            <img class="filterDiv pool" src="path/to/image1.jpg" alt="pool">
+            <img class="filterDiv pool" src="path/to/image1.jpg" alt="pool">
+            <img class="filterDiv pool" src="path/to/image1.jpg" alt="pool">
+            <img class="filterDiv pool" src="path/to/image1.jpg" alt="pool">
+            <img class="filterDiv pool" src="path/to/image1.jpg" alt="pool">
+            <img class="filterDiv pool" src="path/to/image1.jpg" alt="pool">
+        </div>
+    </div>
+
+    <script src="js/gallery.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,21 @@
+/* Style for filtered elements - hidden by default */
+.filterDiv {
+    display: none;
+  }
+  
+  /* Look of elements when they are shown */
+  .show {
+    display: block;
+  }
+  
+  /* Style for the buttons */
+  .filter-btn {
+    cursor: pointer;
+    /* Add more styles as needed */
+  }
+  
+  /* Style for active button */
+  .active {
+    /* your active class style */
+  }
+  
