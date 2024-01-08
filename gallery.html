@@ -39,17 +39,18 @@
                     <button class="filter-btn" onclick="filterSelection('rooms')">Rooms</button>
                     <button class="filter-btn" onclick="filterSelection('restaurant')"> Restaurant</button>
                     <button class="filter-btn" onclick="filterSelection('pool')">Pool</button>
+                    <button class="filter-btn" onclick="filterSelection('spa')">Spa</button>
                 </div>
 
                 <div class="gallery">
-                    <img class="filterDiv rooms" src="images/grandDeluxeRoom.jpg" alt="rooms">
+                    <img class="filterDiv spa1" src="images/spa5.jpg" alt="spa">
                     <img class="filterDiv rooms" src="images/classicRoom.jpg" alt="rooms">
                     <img class="filterDiv rooms" src="images/hotelroom1.jpg" alt="rooms">
                     <img class="filterDiv rooms" src="images/hotelroom2.jpg" alt="rooms">
-                    <img class="filterDiv rooms" src="images/hotelroom3.jpg" alt="rooms">
+                    <img class="filterDiv spa" src="images/spa3.jpg" alt="spa">
                     <img class="filterDiv rooms" src="images/hotelroom4.jpg" alt="rooms">
                     <img class="filterDiv rooms" src="images/hotelroom5.jpg" alt="rooms">
-                    <img class="filterDiv rooms" src="images/hotelroom6.jpg" alt="rooms">
+                    <img class="filterDiv spa" src="images/spa4.jpg" alt="spa">
                     <img class="filterDiv rooms" src="images/hotelroom7.jpg" alt="rooms">
                     <img class="filterDiv rooms" src="images/hotelroom8.jpg" alt="rooms">
                     <img class="filterDiv rooms" src="images/hotelroom9.jpg" alt="rooms">
@@ -84,6 +85,31 @@
         <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         <img id="drag1" src="images/getintouchimage.jpg" draggable="true" ondragstart="drag(event)" width="300">
     </section>
+    <article id="likes">
+        <h2>Most liked pictures</h2>
+        <div class="likes-container">
+            <div class="like">
+                <img src="images/pool2.jpg" alt="hotelroom1">
+                <div class="like-info">
+                    <h3>By Serene</h3>
+                    <p>2,345 likes</p>
+                </div>
+            </div>
+            <div class="like">
+                <img src="images/spa5.jpg" alt="hotelroom2">
+                <div class="like-info">
+                    <h3>By Serene</h3>
+                    <p>2,345 likes</p>
+                </div>
+            </div>
+            <div class="like">
+                <img src="images/pool5.jpg" alt="hotelroom3">
+                <div class="like-info">
+                    <h3>By Serene</h3>
+                    <p>2,345 likes</p>
+                </div>
+            </div>
+    </article>
 
     <section id="newspaper">
         <h2>Join Our Newspaper</h2>
@@ -173,6 +199,30 @@
                 emailInput.value = "";
             }
         }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".like").hide().fadeIn(2000);
+
+            $(".like img").hover(
+                function () {
+                    $(this).fadeTo("fast", 0.7);
+                },
+                function () {
+                    $(this).fadeTo("fast", 1.0);
+                }
+            );
+            $(".like").hover(function () {
+                $(this).find(".like-info").animate({
+                    fontSize: "1.1em"
+                }, 300);
+            }, function () {
+                $(this).find(".like-info").animate({
+                    fontSize: "1em"
+                }, 300);
+            });
+        });
     </script>
 </body>
 

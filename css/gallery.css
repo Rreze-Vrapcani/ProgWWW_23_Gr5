@@ -176,16 +176,11 @@ main {
   background-repeat: no-repeat;
   background-position: left;
   display: flex;
-  /* Use flexbox to layout children horizontally */
   align-items: center;
-  /* Align items vertically in the center */
   justify-content: center;
-  /* Center items horizontally */
   gap: 20px;
-  /* Adds some space between the div and image */
   padding: 4em;
   background-color: #F9F7F5;
-  /* Light grey background */
 }
 
 #div1 {
@@ -203,4 +198,52 @@ main {
 #drag1 {
   width: 200px;
   cursor: move;
+}
+#likes {
+  max-width: 100%; /* Utilize full width */
+  margin: 0 auto;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#likes h2 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.likes-container {
+  display: flex; 
+}
+
+.like {
+  flex: 0 0 calc(33.33% - 20px); 
+  margin: 10px; 
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.like img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.like-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.like-info h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+.like-info p {
+  color: #666;
 }
