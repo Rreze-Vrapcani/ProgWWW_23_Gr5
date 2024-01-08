@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Serene</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container">
+        <div class="feedbackHeader">
+            <nav class="header">
+                <div class="logo">
+                    <a href="index.html">SERENE</a>
+                </div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="services.html">ACTIVITIES</a></li>
+                    <li><a href="roomsPage.html">ROOMS</a></li>
+                    <li><a href="booking.html">BOOKING</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="headerContent">
+                <h1 style="font-weight: 400; font-size: 6rem;">Feedback</h1>
+                <h5><a href="index.html">Home /</a> Feedback</h5>
+            </div>
+        </div>
+        <main>
+
+            <form id="feedbackForm" onsubmit="return validateForm()">
+                <h2>Feedback Form</h2>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="age">Age <span class="optional">(Optional)</span>:</label>
+                <input type="number" id="age" name="age" min="1" max="100">
+
+                <label for="date">Date of Visit:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="feedbackType">Type of Feedback:</label>
+                <select id="feedbackType" name="feedbackType" style="background-color: transparent;">
+                    <option value="comment">Comment</option>
+                    <option value="suggestion">Suggestion</option>
+                    <option value="complaint">Complaint</option>
+                </select>
+
+                <fieldset>
+                    <legend>Service Rating:</legend>
+                    <input type="radio" id="excellent" name="serviceRating" value="excellent" required>
+                    <label for="excellent">Excellent</label>
+                    <input type="radio" id="good" name="serviceRating" value="good" required>
+                    <label for="good">Good</label>
+                    <input type="radio" id="average" name="serviceRating" value="average" required>
+                    <label for="average">Average</label>
+                    <input type="radio" id="poor" name="serviceRating" value="poor" required>
+                    <label for="poor">Poor</label>
+                </fieldset>
+
+                <label for="subscribe">Subscribe to newsletter:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="5" cols="33"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <form id="signupForm" onsubmit="return validateSignupForm()">
+                <h2>Sign Up For A Discount</h2>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" autocomplete="on" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" autocomplete="on" required>
+
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" name="signupEmail" required>
+
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="signupPassword" required>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+                <label for="tel">Telephone <span class="optional">(Optional)</span>:</label>
+                <input type="tel" name="tel" class="text highlightable" placeholder="(383) 78 123 456" id="tel" />
+
+                <label for="visit">Have you ever visited our hotel ?</label>
+                <input type="checkbox" id="visit" name="visit">
+
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" rows="5" cols="33"></textarea>
+
+                <input type="submit" value="Sign Up">
+            </form>
+
+
+        </main>
+
+    </div>
+
+    <section id="feedbacks">
+        <table id="feedbackTable" style="border-spacing: 0px;">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Date of Visit</th>
+                <th>Type of Feedback</th>
+                <th>Service Rating</th>
+                <th>Subscribed</th>
+                <th>Comments</th>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="about">
+                <h3>About us</h3>
+                <p>Ultrices interdum viverra pharetra, tellus. Sapien eu diam ipsum volutpat, amet fringi verra
+                    pharetrailla.</p>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Activities</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Booking</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>Lagja e Spitalit, Prishtine</p>
+                <p>+383 45 823 292</p>
+                <p>info@serenehotel.com</p>
+            </div>
+            <div class="social">
+                <h3>Get Social</h3>
+                <p>Follow us on social patforms and keep in touch with Serene Hotel</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png"
+                            alt="facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png"
+                            alt="instagram"></a>
+                    <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Serene Hotel. All rights reserved.</p>
+            <div class="payment-methods">
+                <p>Payment methods:</p>
+                <img src="images/paypal.png" alt="PayPal">
+                <img src="images/visa.png" alt="Visa">
+                <img src="images/mastercard.png" alt="MasterCard">
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/feedback.js"></script>
+    <script>
+
+        function validateTelephone(tel) {
+            var re = /^\(\d{3}\) \d{3}-\d{4}$/;
+            return re.test(String(tel));
+        }
+        function validateEmail(email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@\"]+(\.[^<>()\[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+        function validateSignupForm() {
+            event.preventDefault();
+
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var email = document.getElementById('signupEmail').value;
+            var password = document.getElementById('signupPassword').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+            var tel = document.getElementById('tel').value;
+
+            if (firstName.trim() === '') {
+                alert('Please enter your first name.');
+                return false;
+            }
+
+            if (lastName.trim() === '') {
+                alert('Please enter your last name.');
+                return false;
+            }
+
+            if (!validateEmail(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+
+            if (password.length < 8) {
+                alert('Password must be at least 8 characters.');
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match.');
+                return false;
+            }
+
+            if (tel && !validateTelephone(tel)) {
+                alert('Please enter a valid telephone number.');
+                return false;
+            }
+
+            document.getElementById('signupForm').reset();
+
+            return false;
+        }
+    </script>
+</body>
+
+</html>
