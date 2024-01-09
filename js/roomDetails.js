@@ -132,4 +132,21 @@ window.addEventListener('load', () => {
     });
   });
 
-  
+  //
+
+  function getRoomDetailsFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    const details = params.get('details');
+    return details ? JSON.parse(decodeURIComponent(details)) : null;
+}
+
+function displayRoomDetails() {
+    const details = getRoomDetailsFromURL();
+    if (details) {
+        document.getElementById('roomName').textContent = details.name;
+        document.getElementById('roomPrice').textContent = details.price;
+        // Add more elements as needed for size, capacity, bed, services, etc.
+    }
+}
+
+document.addEventListener('DOMContentLoaded', displayRoomDetails);

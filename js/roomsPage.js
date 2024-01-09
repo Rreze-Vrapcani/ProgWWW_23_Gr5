@@ -31,3 +31,17 @@ function navigateToPage(pageNumber) {
     const nextPage = currentPage + 1;
     navigateToPage(nextPage);
   }
+
+
+  //
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const detailButtons = document.querySelectorAll('.card button');
+
+    detailButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const roomDetails = this.getAttribute('data-room-details');
+            window.location.href = `roomDetails.html?details=${encodeURIComponent(roomDetails)}`;
+        });
+    });
+});
