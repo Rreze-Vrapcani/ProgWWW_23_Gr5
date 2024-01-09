@@ -7,3 +7,31 @@
     color: white;
     object-fit: cover;
 }
+
+.roomDetails{
+    display: flex;
+    flex-direction: row;
+}
+
+.reserve{
+    width: 30%;
+    border: 1px solid black;
+    background-color: #F9F7F5;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
+.inforeserve{
+    border: none;
+    outline: none;
+    background-color: #F9F7F5;
+    border-bottom: 1px solid grey;
+    width: 90%;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.roomImages{
+    width: 80%;
+}
