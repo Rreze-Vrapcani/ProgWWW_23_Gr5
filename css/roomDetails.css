@@ -105,14 +105,18 @@ body, html {
     margin-bottom: 20px;
     border-top: 1px solid #ccc;
     padding-top: 10px;
+    
+  }
+  .room-details{
+    margin-left: 20px;
   }
   
-  .features-list {
+  /* .features-list {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
   }
-  
+   */
   .features-list li {
     margin-bottom: 5px;
   }
@@ -136,5 +140,89 @@ body, html {
   .cart-btn {
     background: #ffc107; /* Cart button color */
   }
-  
-  
+
+
+    .features-amenities {
+        /* Styling for the features & amenities section */
+        margin-bottom: 20px; /* Adjust as needed */
+       margin-left: 20px;
+      }
+      
+      .features-amenities h2 {
+        /* Styling for the heading */
+        margin-bottom: 10px; /* Adjust as needed */
+      }
+      
+     
+      .features-list {
+        padding: 0; /* Removes default padding */
+        list-style: disc; /* Removes list item bullets */
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Creates a responsive grid with minimum column width of 150px */
+        gap: 10px; /* Adjust the space between items */
+      }
+      
+      .featuresList li {
+        padding: 5px 10px; /* Padding inside each list item, adjust as needed */
+        border-radius: 5px; /* Rounded corners for the list items */
+      }
+
+      .location-container {
+        margin-left: 20px;
+        padding: 20px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+      }
+      
+      .address-details {
+        display: flex;
+      }
+      
+      .address-column2 {
+        padding-left: 30px;
+      }
+      .reviews-container {
+        /* max-width: 800px;
+        margin: auto; */
+        margin-left: 20px;
+        padding-left: 50px;
+      }
+      
+     
+      .review {
+        display: flex;
+        align-items: flex-start; /* Aligns the profile pic and review text to the top */
+        margin-bottom: 20px;
+      }
+      
+      .profile-pic {
+        border-radius: 50%; /* Makes the image round */
+        width: 50px; /* Set the size of the profile pic */
+        height: 50px;
+        margin-right: 10px;
+      }
+      
+      .review-text {
+        flex-grow: 1;
+      }
+      
+      .review-author {
+        font-weight: bold;
+      }
+      
+      .review-date {
+        color: #777;
+        margin-left: 5px;
+      }
+      
+      .reply-link {
+        color: #007bff;
+        text-decoration: none;
+        font-size: 0.9em;
+      }
+      
+      
+     
+      
+      
+      
