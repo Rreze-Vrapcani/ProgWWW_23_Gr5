@@ -1,0 +1,9 @@
+.roomsDetailsHeader {
+    background-image: url("../images/roomsHeader.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 470px;
+    width: 100%;
+    color: white;
+    object-fit: cover;
+}
