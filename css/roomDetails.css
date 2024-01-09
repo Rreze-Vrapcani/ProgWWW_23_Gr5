@@ -1,3 +1,38 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .slideshow-container {
+    width: 100%;
+    position: relative;
+  }
+  
+  #main-image img {
+    width: 100%;
+    display: block;
+  }
+  
+  #thumbnail-slider {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  .thumbnail {
+    width: auto;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .thumbnail:active,
+  .thumbnail:hover {
+    opacity: 0.6;
+  }
+  
 .roomsDetailsHeader {
     background-image: url("../images/roomsHeader.jpg");
     background-size: cover;
