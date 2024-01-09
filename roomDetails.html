@@ -50,14 +50,23 @@
                       
                     </div>
                   </div>
+                  <div class="roomInfo">
+                    <h1>Classic Rooms - Double Bed</h1>
+                    <h1><strong>Price: 299$ </strong>/ Pernight</h1>
+                </div>
+                <hr>
             </div>
+
+           
+
+            
 
             <div class="reserve">
                 <h1>Reserve Now</h1><br>
-                <label for="Check-In">Start Date:</label>
+                <label for="Check-In">Check-In</label>
                 <input class="inforeserve" type="date" id="startDate" required> <br>
         
-                <label for="Check-Out">End Date:</label>
+                <label for="Check-Out">Check-Out</label>
                 <input class="inforeserve" type="date" id="endDate" required> <br>
 
                 <label for="room">Room:</label>
@@ -70,7 +79,7 @@
                 <label for="children">Children:</label>
                 <input class="inforeserve" type="number" id="children" min="0" required> <br>
 
-                <textarea class="inforeserve" placeholder="Write your message here" rows="8"></textarea>  <br>
+                <textarea class="inforeserve" placeholder="Write your message here" rows="4"></textarea>  <br>
 
                 <button class="total buttonTotal" >Check Availability</button>
         
@@ -149,11 +158,7 @@
               </div>
             </div>
             
-            <!-- Assuming the interactive buttons are chat and cart -->
-            <div class="interactive-buttons">
-              <button class="chat-btn">Chat Icon</button>
-              <button class="cart-btn">Cart Icon</button>
-            </div>
+         
           </div>
           <div class="location-container">
             <h1>Location</h1>
@@ -201,6 +206,27 @@
           </div>
 
 
+          <div class="review-form-container">
+            <h1>Leave a Review</h1>
+            <p>Your email address will not be published. Required fields are marked *</p>
+            
+            <form id="review-form">
+              <textarea name="review" placeholder="Write your Review here *" required></textarea>
+              
+              <input type="text" name="fullname" placeholder="Write your full name here *" required>
+              
+              <input type="email" name="email" placeholder="Write your e-mail address *" required>
+              
+              <label class="checkbox-container">
+                <input type="checkbox" name="save-info">
+                Save my name, email, and website in this browser for the next time.
+              </label>
+              
+              <button class="postButton" type="submit">Post Comment</button>
+            </form>
+          </div>
+          
+         
 <div class="info">
    <div class="getInTouch">
     <h1>Get In Touch</h1>
