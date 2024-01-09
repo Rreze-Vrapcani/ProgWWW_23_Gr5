@@ -133,6 +133,10 @@ main {
    
   }
 
+  #pagination{
+    position: relative;
+    left: 45%;
+  }
 
 @media screen and (max-width: 1068px) {
     .grid {
