@@ -270,6 +270,76 @@ body, html {
       }
       
      
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .roomDetails {
+            flex-direction: column;
+        }
+    
+        .reserve, .roomImages {
+            width: 100%;
+            margin-left: 0;
+            padding: 20px;
+        }
+    
+        .overview-container, .price-details, .room-details, .features-amenities, .reviews-container, .review-form-container {
+            padding: 10px;
+        }
+    
+        .features {
+            flex-direction: column;
+        }
+    
+        .features-amenities .features-list {
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        }
+    }
+    
+    /* Media query for mobile devices (e.g., devices with a screen width less than 768px) */
+    @media screen and (max-width: 767px) {
+        .roomDetails {
+            flex-direction: column;
+        }
+    
+        .reserve, .roomImages {
+            width: 100%;
+            margin-left: 0;
+            padding: 15px;
+        }
+    
+        .overview-container, .price-details, .room-details, .features-amenities, .reviews-container, .review-form-container {
+            padding: 5px;
+        }
+    
+        .features {
+            flex-direction: column;
+        }
+    
+        .features-amenities .features-list {
+            grid-template-columns: 1fr;
+        }
+    
+        .address-details {
+            flex-direction: column;
+        }
+    
+        .address-column2 {
+            padding-left: 0;
+        }
+    }
+    
+    /* Adjustments for smaller mobile screens */
+    @media screen and (max-width: 480px) {
+        .review-form-container {
+            max-width: 100%;
+            margin-right: 5%;
+        }
+    
+        .review-form-container textarea, 
+        .review-form-container input[type="text"], 
+        .review-form-container input[type="email"] {
+            width: calc(100% - 20px); /* Adjusting width to account for padding */
+        }
+    }
      
       
       
