@@ -70,3 +70,71 @@ body, html {
 .roomImages{
     width: 80%;
 }
+
+.overview-container, .price-details {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .feature-item {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .feature-item img {
+    width: 50px; /* You can adjust this according to your icon sizes */
+    margin-bottom: 5px;
+  }
+  
+  .price-details {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+
+  .room-details, .features-amenities {
+    margin-bottom: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .features-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+  
+  .features-list li {
+    margin-bottom: 5px;
+  }
+  
+  .interactive-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .chat-btn, .cart-btn {
+    background: #007bff; /* Chat button color */
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 50%; /* Makes the button round */
+    cursor: pointer;
+  }
+  
+  .cart-btn {
+    background: #ffc107; /* Cart button color */
+  }
+  
+  

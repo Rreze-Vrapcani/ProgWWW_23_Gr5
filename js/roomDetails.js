@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
       });
     });
   
-    // Implement swipe functionality (basic example)
+    
     let startTouch = null;
   
     document.getElementById('thumbnail-slider').addEventListener('touchstart', function(e) {
