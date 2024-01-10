@@ -110,3 +110,75 @@ function confirmBooking() {
     var fullName = document.getElementById("fullNameInput").value;
     alert("Your reservation was made successfully. Thank you, " + fullName + " for choosing us!");
 }
+
+function validateForm() {
+    
+    var roomType = document.getElementById("roomType").value;
+    var startDate = document.getElementById("startDate").value;
+    var endDate = document.getElementById("endDate").value;
+    var adults = document.getElementById("adults").value;
+    var children = document.getElementById("children").value;
+    var fullName = document.getElementById("fullNameInput").value;
+    var phone = document.getElementById("phoneInput").value;
+    var email = document.getElementById("emailInput").value;
+
+    // Validate room type
+    if (roomType === "") {
+        alert("Please select a room type");
+        return false;
+    }
+
+    // Validate date
+    var currentDate = new Date();
+    if (new Date(startDate) < currentDate) {
+        alert("Please select a valid start date");
+        return false;
+    }
+
+    if (new Date(endDate) < currentDate) {
+        alert("Please select a valid end date");
+        return false;
+    }
+
+    // Validate number of people
+    if (adults < 1 || children < 0) {
+        alert("Please select a valid number of people");
+        return false;
+    }
+
+    // Validate full name
+    if (fullName.length < 2) {
+        alert("Please enter a valid full name (at least 2 characters)");
+        return false;
+    }
+
+    // Validate phone number (should contain only numbers)
+    if (!/^\d+$/.test(phone)) {
+        alert("Please enter a valid phone number (numbers only)");
+        return false;
+    }
+
+    // Validate email
+    if (!/\S+@\S+\.\S+/.test(email)) {
+        alert("Please enter a valid email address");
+        return false;
+    }
+
+    // Validate payment option (at least one should be selected)
+    var paymentOptions = document.getElementsByName("paymentOption");
+    var selectedPaymentOption = false;
+
+    for (var i = 0; i < paymentOptions.length; i++) {
+        if (paymentOptions[i].checked) {
+            selectedPaymentOption = true;
+            break;
+        }
+    }
+
+    if (!selectedPaymentOption) {
+        alert("Please select a payment option");
+        return false;
+    }
+
+    return true;
+}

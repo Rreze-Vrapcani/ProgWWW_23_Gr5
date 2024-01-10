@@ -2,6 +2,8 @@ let currentPage = 1;
     const pages = document.querySelectorAll('.grid');
     const totalPages = pages.length;
 
+    
+
     function showPage(pageNumber) {
       if (pageNumber < 1) {
         pageNumber = 1;
@@ -15,10 +17,13 @@ let currentPage = 1;
 
       document.getElementById('pageNumber').textContent = pageNumber;
       currentPage = pageNumber;
+
+      
     }
 
     function changePage(offset) {
       showPage(currentPage + offset);
+      
     }
 
     // Initial page load
@@ -26,7 +31,7 @@ let currentPage = 1;
 
 
     //remove element
-    // Assuming your element has an ID "exampleElement"
+ 
 var element = document.getElementById("gridElement");
 
 // Remove the inline style "display: block;"
