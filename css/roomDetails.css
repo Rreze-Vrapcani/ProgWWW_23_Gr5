@@ -10,6 +10,7 @@ body, html {
     position: relative;
     background-color: white;
     margin-bottom: 0;
+    padding: 0;
   }
   
   #main-image img {
@@ -79,9 +80,7 @@ body, html {
 }
 
 .overview-container, .price-details {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+    padding: 50px;
   }
   
   .features {
@@ -103,8 +102,7 @@ body, html {
   .price-details {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 50px;
   }
   
 
@@ -115,7 +113,7 @@ body, html {
     
   }
   .room-details{
-    margin-left: 20px;
+    padding: 50px;
   }
   
   /* .features-list {
@@ -137,8 +135,7 @@ body, html {
 
     .features-amenities {
         /* Styling for the features & amenities section */
-        margin-bottom: 20px; /* Adjust as needed */
-       margin-left: 20px;
+        padding: 50px;
       }
       
       .features-amenities h2 {
@@ -266,7 +263,6 @@ body, html {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 5%;
       }
       
      
@@ -281,7 +277,7 @@ body, html {
             padding: 20px;
         }
     
-        .overview-container, .price-details, .room-details, .features-amenities, .reviews-container, .review-form-container {
+        .price-details, .room-details, .features-amenities, .reviews-container, .review-form-container {
             padding: 10px;
         }
     
