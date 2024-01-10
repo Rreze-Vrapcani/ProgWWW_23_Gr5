@@ -55,11 +55,21 @@ document.getElementById("fish").addEventListener("click", function () {
 function subscribe() {
     var emailInput = document.getElementById("emailInput");
     var userEmail = emailInput.value;
+    var emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-    if (userEmail.trim() !== "") {
-        alert("You've successfully subscribed!");
-        emailInput.value = "";
+    if (userEmail.trim() === "") {
+        alert("Please enter your email address.");
+        return false;
     }
+
+    if (!emailPattern.test(userEmail)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+
+    alert("You've successfully subscribed!");
+    emailInput.value = "";
+    return true;
 }
 
 //quotes
@@ -85,19 +95,41 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
 }
 
+
 //get in touch
 function submit() {
     var text = document.getElementsByClassName("message")[0].value;
     var name = document.getElementsByClassName("name")[0].value;
     var email = document.getElementsByClassName("email")[0].value;
+    var emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-    if (text.trim() !== "" && name.trim() !== "" && email.trim() !== "") {
-        alert("Thanks for reaching out to us!");
-        document.getElementsByClassName("message")[0].value = "";
-        document.getElementsByClassName("name")[0].value = "";
-        document.getElementsByClassName("email")[0].value = "";
+    if (text.trim() === "") {
+        alert("Please enter your message.");
+        return false;
     }
+
+    if (name.trim() === "") {
+        alert("Please enter your name.");
+        return false;
+    }
+
+    if (email.trim() === "") {
+        alert("Please enter your email address.");
+        return false;
+    }
+
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+
+    alert("Thanks for reaching out to us!");
+    document.getElementsByClassName("message")[0].value = "";
+    document.getElementsByClassName("name")[0].value = "";
+    document.getElementsByClassName("email")[0].value = "";
+    return true;
 }
+
 
 //video
 function startVideo() {
