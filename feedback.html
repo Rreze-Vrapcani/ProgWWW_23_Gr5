@@ -138,8 +138,28 @@
         </table>
     </section>
 
+    <section id="functions">
+        <div class="functions-container">
+            <div class="square">
+                We have received 112 feedbacks up till now. 50 of those from Prishtina, 30 from Peja, 10 from Prizren
+                and 22 from other cities.
+                Most of the feedback we received were from:
+                <p class="result"></p>
+                <button id="calculate">Calculate</button>
+            </div>
+            <div class="square">
+
+            </div>
+
+        </div>
+        <div class="btns">
+            <button id="hide">Hide</button>
+            <button id="show">Show</button>
+        </div>
+    </section>
+
     <section id="canvas">
-        <canvas id="myCanvas" >
+        <canvas id="myCanvas" style="display: none;">
         </canvas>
     </section>
 
@@ -192,6 +212,17 @@
 
 
     <script src="js/feedback.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("#myCanvas").hide();
+            });
+            $("#show").click(function () {
+                $("#myCanvas").show();
+            });
+        });
+    </script>
     <script>
 
         function validateTelephone(tel) {
