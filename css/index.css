@@ -538,3 +538,11 @@ q {
     border: 1px solid white;
     border-radius: 5px;
 }
+
+.ql li a {
+    border-bottom: none;
+}
+
+.contact > p{
+    margin: 0;
+}
