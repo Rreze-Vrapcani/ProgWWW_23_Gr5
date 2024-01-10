@@ -158,3 +158,8 @@ th {
     background-color: black;
     color: white;
 }
+
+.square svg {
+    max-width: 100%; 
+    height: auto; 
+}
