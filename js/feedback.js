@@ -68,12 +68,12 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = 400;
 
-ctx.fillStyle = "#F9F7F5"; 
+ctx.fillStyle = "#F9F7F5";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 const centerY = canvas.height / 2;
 const elementWidth = 150;
-const totalElementsWidth = elementWidth * 3; 
+const totalElementsWidth = elementWidth * 3;
 const startX = (canvas.width - totalElementsWidth) / 2;
 
 ctx.fillStyle = 'white';
@@ -81,15 +81,15 @@ ctx.fillRect(startX, centerY - 50, elementWidth, 100);
 
 ctx.font = '20px Arial';
 ctx.fillStyle = 'black';
-ctx.fillText('Hello Canvas', startX, centerY + 60); 
+ctx.fillText('Hello Canvas', startX, centerY + 60);
 
 ctx.beginPath();
-ctx.moveTo(startX + 200, centerY - 50); 
-ctx.lineTo(startX + 350, centerY + 50); 
+ctx.moveTo(startX + 200, centerY - 50);
+ctx.lineTo(startX + 350, centerY + 50);
 ctx.lineTo(startX + 200, centerY + 50);
-ctx.closePath(); 
-ctx.fillStyle = 'green';
-ctx.fill(); 
+ctx.closePath();
+ctx.fillStyle = 'grey';
+ctx.fill();
 
 const gradient = ctx.createLinearGradient(startX + 400, centerY - 50, startX + 550, centerY + 50);
 gradient.addColorStop(0, 'brown');
@@ -100,41 +100,41 @@ ctx.fillRect(startX + 400, centerY - 50, elementWidth, 100);
 
 
 
-// const canvas = document.getElementById('myCanvas');
-// const ctx = canvas.getContext('2d');
+//match in js
+function extractEmails(text) {
+    var emailPattern = /[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}/g;
+    return text.match(emailPattern);
+}
 
-// canvas.width = window.innerWidth;
-// canvas.height = 400;
-
-// ctx.fillStyle = "#F9F7F5";
-// ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-// ctx.fillStyle = 'white';
-// ctx.fillRect(100, 50, 150, 100);
-
-// ctx.font = '20px Arial';
-// ctx.fillStyle = 'black';
-// ctx.fillText('Hello Canvas', 100, 200); 
-
-// ctx.beginPath();
-// ctx.moveTo(300, 150); 
-// ctx.lineTo(450, 250); 
-// ctx.lineTo(300, 250);
-// ctx.closePath(); 
-// ctx.fillStyle = 'green';
-// ctx.fill(); 
-
-// const gradient = ctx.createLinearGradient(500, 50, 650, 150);
-// gradient.addColorStop(0, 'brown');
-// gradient.addColorStop(1, 'white');
-
-// ctx.fillStyle = gradient;
-// ctx.fillRect(500, 50, 150, 100);
+var feedback = "I had a great stay at your resort. Please contact me at customer@example.com for further inquiries.";
+console.log(extractEmails(feedback));
 
 
+//numri maksimal i feedbacks
+document.getElementById('calculate').addEventListener('click', function () {
+    try {
+        var feedbackCounts = {
+            Prishtina: 50,
+            Peja: 30,
+            Prizren: 10,
+            Other: 22
+        };
 
+        var maxFeedbackCity = '';
+        var maxFeedbackCount = 0;
 
+        for (var city in feedbackCounts) {
+            if (!isNaN(feedbackCounts[city]) && feedbackCounts[city] > maxFeedbackCount) {
+                maxFeedbackCount = feedbackCounts[city];
+                maxFeedbackCity = city;
+            }
+        }
 
-
+        document.querySelector('.result').textContent = 'Most feedbacks received from: ' + maxFeedbackCity + ' (' + maxFeedbackCount + ' feedbacks)';
+    } catch (error) {
+        console.error("An error occurred: ", error);
+        document.querySelector('.result').textContent = 'An error occurred while calculating the result.';
+    }
+});
 
 
