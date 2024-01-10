@@ -1,0 +1,214 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.feedbackHeader {
+    background-image: url("../images/bookingHeader.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 470px;
+    width: 100%;
+    color: white;
+    object-fit: cover;
+}
+
+.headerContent {
+    line-height: 10px;
+    position: relative;
+    left: 14%;
+    top: 20%;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f7f5;
+}
+
+.mission-section {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.mission-section h2 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.mission-section p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+.ql li a {
+    border-bottom: none;
+}
+
+
+.team-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f7f5;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #666;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.values-section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: white;
+    gap: 50px;
+}
+
+.values-section .lista {
+    flex-basis: 50%;
+    padding: 20px;
+}
+
+.values-section img {
+    flex-basis: 50%;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.values-section img:hover {
+    transform: scale(1.1);
+}
+
+.lista h2 {
+    color: #4a4e69;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.lista ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista ul li {
+    background-color: #f9f7f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.lista ul li:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateX(10px);
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f9f7f5;
+    gap: 30px;
+}
+
+.about-section img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.about-section .abt-text {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-section {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section .abt-text p,
+ol {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 10px;
+    }
+
+    .team-member,
+    .values-section li {
+        padding: 10px;
+    }
+}
